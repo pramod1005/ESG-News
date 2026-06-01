@@ -73,22 +73,28 @@ Required Output Structure (Strict Order)
 * No hype, marketing language, or emojis
 
 2. Executive Summary
-   Write ONE single paragraph (140-220 words).
+   Write ONE single paragraph (220-330 words).
 
 Mandatory Content Coverage:
 
-* Company context (Start with the company name and brief description of what the company does)
-* Event description (what happened and who is involved)
-* Material facts(Include ONLY explicitly stated facts:
-Metrics, scale, investments, timelines
-Geographic scope if mentioned)
-* Strategic context(ESG, sustainability, governance, or regulatory relevance
-Leadership rationale if explicitly stated
-Long-term strategic implications
+* Company context 
+    * Start with the company name 
+    * Brief description of what the company does)
+* Event description 
+    * What happened 
+    * Who is involved
+* Material facts
+    Include ONLY explicitly stated facts:
+        * Metrics, scale, investments, timelines
+        * Geographic scope if mentioned
+* Strategic context(
+    * ESG, sustainability, governance, or regulatory relevance
+    * Leadership rationale if explicitly stated
+    * Long-term strategic implications
 )
-* Investor-lens closing sentence(End with a sentence similar to:
-“For investors, the development underscores implications for governance quality, risk management, and long-term value creation.”
-)
+* Investor-lens closing sentence(MANDATORY):
+    * End with a sentence similar to:
+        “For investors, the development underscores implications for governance quality, risk management, and long-term value creation.”
 
 Tone & Quality Rules:
 
@@ -99,6 +105,13 @@ Tone & Quality Rules:
 * No invented facts
 * Avoid repetition or filler 
 * Focus on material relevance 
+
+Required Logical Flow : 
+1. Company + event overview
+2.Key facts and metrics
+3.Leadership intent or positioning
+4.ESG/governance strategic relevance
+5.Investor relevance closing sentence
 
 3. ESG Impact Classification
 
@@ -141,7 +154,7 @@ ARTICLE:
     try:
         # Gemini AI response
         response = client.models.generate_content(
-        model="gemini-3.5-flash",
+        model="gemini-2.5-flash",
         contents=prompt
         )
 
@@ -158,7 +171,7 @@ ARTICLE:
         }
     
     response = client.models.generate_content(
-model="gemini-3.5-flash",
+model="gemini-2.5-flash",
 contents=prompt
 )
 
